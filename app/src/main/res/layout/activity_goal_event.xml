@@ -9,8 +9,8 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="403dp"
-        android:layout_height="277dp"
+        android:layout_width="400dp"
+        android:layout_height="300dp"
         android:layout_marginTop="50dp"
         android:src="@drawable/footballfield"
         app:layout_constraintEnd_toEndOf="parent"
