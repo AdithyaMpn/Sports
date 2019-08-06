@@ -68,6 +68,14 @@ public class GoalEvent extends AppCompatActivity {
                 canvas.drawCircle(RealX,RealY, 5, paint);
                 cp.invalidate();
 
+                if(RealX<80)
+                    Toast.makeText(GoalEvent.this, "From Left D Area", Toast.LENGTH_SHORT).show();
+                if(RealX>80&&RealX<199)
+                    Toast.makeText(GoalEvent.this, "From Left Non-D Area", Toast.LENGTH_SHORT).show();
+                if(RealX>199&&RealX<320)
+                    Toast.makeText(GoalEvent.this, "From Right Non-D Area", Toast.LENGTH_SHORT).show();
+                if(RealX>320)
+                    Toast.makeText(GoalEvent.this, "From Right D Area", Toast.LENGTH_SHORT).show();
 
                 return false;
             }
