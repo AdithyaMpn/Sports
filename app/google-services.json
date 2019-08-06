@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "26238963193",
+    "firebase_url": "https://sports-2016e.firebaseio.com",
+    "project_id": "sports-2016e",
+    "storage_bucket": "sports-2016e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:26238963193:android:3e9b3aa7ff6fccd0",
+        "android_client_info": {
+          "package_name": "com.adithya.sports"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "26238963193-b1sjk751lt63ucb1un3r42r0cv0cg0bs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.adithya.sports",
+            "certificate_hash": "ae441cd9677fdccae0176cebfb687067115c9078"
+          }
+        },
+        {
+          "client_id": "26238963193-6t8g7arv6qmtrn1rjdu5lkrl24p75q72.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcLqIlr48CklF0BincHIYTmItiCE5eJ7U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "26238963193-6t8g7arv6qmtrn1rjdu5lkrl24p75q72.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
