@@ -1,5 +1,6 @@
 package com.adithya.sports;
 
+import android.content.DialogInterface;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -12,6 +13,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.database.DatabaseReference;
@@ -76,6 +78,30 @@ public class GoalEvent extends AppCompatActivity {
                     Toast.makeText(GoalEvent.this, "From Right Non-D Area", Toast.LENGTH_SHORT).show();
                 if(RealX>320)
                     Toast.makeText(GoalEvent.this, "From Right D Area", Toast.LENGTH_SHORT).show();
+
+                String[] colors = {"By Head", "By Leg"};
+
+                AlertDialog.Builder builder = new AlertDialog.Builder(GoalEvent.this);
+                builder.setTitle("How is the Goal Shot");
+                builder.setItems(colors, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        // the user clicked on colors[which]
+                        String[] colors = {"Jersy1", "Jersy2","Jersy3"};
+
+                        AlertDialog.Builder builder = new AlertDialog.Builder(GoalEvent.this);
+                        builder.setTitle("Who Assisted");
+                        builder.setItems(colors, new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                // the user clicked on colors[which]
+                                Toast.makeText(GoalEvent.this,"Mark the Assisted Player Position",Toast.LENGTH_LONG).show();
+                            }
+                        });
+                        builder.show();
+                    }
+                });
+                builder.show();
 
                 return false;
             }
