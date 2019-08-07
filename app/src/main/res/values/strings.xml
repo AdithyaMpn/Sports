@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Sports</string>
+
+    <string name="facebook_application_id" translatable="false">404052903558313</string>
+    <string name="facebook_login_protocol_scheme" translatable="false">fb404052903558313</string>
+
 </resources>

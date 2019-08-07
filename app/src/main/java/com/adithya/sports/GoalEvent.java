@@ -1,5 +1,6 @@
 package com.adithya.sports;
 
+import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
@@ -13,7 +14,6 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.database.DatabaseReference;
@@ -126,14 +126,7 @@ public class GoalEvent extends AppCompatActivity {
             Map<String, Object> retMap = new Gson().fromJson(
                     jsonStr, new TypeToken<HashMap<String, Object>>() {}.getType()
             );
-//            try {
-//                JSONObject obj = new JSONObject(jsonStr);
-//                Log.v(TAG,"Coversion Success from string to json object");
-//                System.out.println(obj);
-//                ref.setValue(obj);
-//            } catch (JSONException e) {
-//                e.printStackTrace();
-//            }
+            
             ref.setValue(retMap);
             Log.v(TAG, "Response from url: " + jsonStr);
             if (jsonStr != null) {
